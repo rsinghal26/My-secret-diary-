@@ -13,6 +13,7 @@
 		setcookie("id", "", time() - 60*60*24*356 );
 		setcookie("id", "", time() - 60*60*24*356 );
 		$_COOKIE["id"] = "";
+		header("Location: index.php");
 
 	}else if((array_key_exists("id", $_SESSION)  AND $_SESSION['id']) OR (array_key_exists("id", $_COOKIE) AND $_COOKIE['id'] )){
 
